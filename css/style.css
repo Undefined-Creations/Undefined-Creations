@@ -126,12 +126,168 @@ nav {
   font-size: 1.2vw;
   color: var(--sec-color);;
 }
-.home-section .work a{
+.home-section .work a, .home-section .about .text a{
+  font-size: 0.8vw;
   color: var(--text-color);
   float: right;
 }
-.home-section .work a i{
+.home-section .work a i, .home-section .about a i{
   padding-left: 10px;
+}
+.home-section .about{
+  position: relative;
+  height: 80vh;
+  background-image: url(https://plos.org/wp-content/uploads/2020/07/abstract-image_color-tone-1120x630.jpg);
+
+}
+.home-section .about .text{
+  width: 100%;
+  position: absolute;
+  padding: 0 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: var(--text-color);
+}
+.home-section .about .text h2{
+  font-size: 1.25vw;
+  font-weight: 400;
+  padding-bottom: 25px;
+}
+.home-section .about .text h3{
+  font-size: 3vw;
+  line-height: 200%;
+}
+.home-section .cta{
+  padding: 5% 10%;
+  text-align: center;
+}
+.home-section .cta .heading{
+  color: var(--text-color);
+}
+.home-section .cta-box{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+	grid-gap: 2rem;
+	align-items: center;
+	margin-top: 5rem;
+	text-align: center;
+}
+.home-section .wrap{
+	background: #ffffff;
+	box-shadow: 18px 0px 87px 0px rgb(10 15 70 / 7%);
+	border-radius: 12px;
+	padding: 50px 50px 50px 50px;
+	transition: ease .40s;
+	cursor: pointer;
+}
+.home-section .wrap h3{
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 2px;
+}
+.home-section .wrap p{
+	font-size: var(--p-font);
+}
+footer {
+  width: 100%;
+  position: absolute;
+  background: var(--bg-color);
+  color: var(--text-color);
+  padding: 100px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
+  box-shadow: hsla(0 0% 0% / 0.1) 0 -0.5rem 1rem;
+}
+
+footer .row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  justify-content: space-between;
+}
+footer .row .col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+footer .row .col:nth-child(2),
+footer .row .col:nth-child(3) {
+  flex-basis: 15%;
+}
+footer .col img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 20px;
+}
+footer .col h3 {
+  width: fit-content;
+  border-bottom: 2px solid var(--main-color);
+  margin-bottom: 20px;
+  position: relative;
+}
+footer .email-id {
+  width: fit-content;
+  color: var(--text-color);
+  font-weight: bold;
+  margin: 20px 0;
+}
+footer ul li {
+  list-style: none;
+  margin-bottom: 14px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+footer form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--text-color);
+  margin-bottom: 50px;
+}
+footer form .bx {
+  color: var(--text-color);
+  font-size: 18px;
+  margin-right: 10px;
+}
+footer form input {
+  width: 100%;
+  background: transparent;
+  color: var(--text-color);
+  border: 0;
+  outline: none;
+}
+footer form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+footer .social-icons .fa-brands {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: var(--bg-color);
+  background: var(--text-color);
+  margin-right: 15px;
+  cursor: pointer;
+}
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid var(--text-color);
+  margin: 20px auto;
+}
+footer .copyright {
+  text-align: center;
 }
 @media (max-width: 1024px){
   nav{
@@ -145,6 +301,13 @@ nav {
   }
   .navlist a {
     font-size: 0.9rem;
+  }
+  footer .row .col:nth-child(2),
+  .col:nth-child(3) {
+    flex-basis: 35%;
+  }
+  footer .row .col:nth-child(4) {
+    flex-basis: 100%;
   }
 }
 @media (max-width: 768px) {
