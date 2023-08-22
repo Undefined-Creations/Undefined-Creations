@@ -7,12 +7,27 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 30px;
+}
+
 :root {
   --bg-color: #352f44;
   --text-color: #ffffff;
   --main-color: #5c5470;
   --sec-color: #b9b4c7;
 }
+
 body {
   background: var(--bg-color);
 }
@@ -35,66 +50,89 @@ body {
   color: var(--text-color);
   line-height: 250%;
 }
+
 .home-section .home .text .scroll-down {
   display: flex;
   align-items: center;
-  color: var(--sec-color);
-  font-size: 1vw;
 }
+.home-section .home .text .scroll-down a {
+  color: var(--sec-color);
+  font-size: 0.8vw;
+}
+
 .home-section .home .text .scroll-down i {
-  border-radius: 50%;
+  font-size: 12px;
+  border-radius: 40%;
   border: 1px solid var(--main-color);
   padding: 10px;
   margin: 0 10px;
 }
+
 .home-section .home img {
   width: 35%;
 }
+
 .home-section .work {
   background: var(--bg-color);
   padding: 5% 10%;
 }
+
 .home-section .work h3 {
   font-size: 2vw;
   color: var(--text-color);
 }
+
 .home-section .work .cards {
-  padding: 75px 0;
+  padding: 70px 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
+
 .home-section .work .cards .card {
   width: 40%;
-  padding: 25px 30px;
+  padding: 20px 30px;
 }
+.home-section .work .cards .card:nth-child(2),
+.home-section .work .cards .card:nth-child(4) {
+  margin: 3% 0 0 7%;
+}
+.home-section .work .cards .card:nth-child(3) {
+  margin: 0 0 0 7%;
+}
+
 .home-section .work .cards .card img {
   width: 100%;
   padding: 20px 0;
 }
+
 .home-section .work .cards .card h4 {
   font-size: 1.5vw;
   color: var(--text-color);
 }
+
 .home-section .work .cards .card p {
   font-size: 1.2vw;
   color: var(--sec-color);
 }
+
 .home-section .work a,
 .home-section .about .text a {
   font-size: 0.8vw;
   color: var(--text-color);
   float: right;
 }
+
 .home-section .work a i,
 .home-section .about a i {
   padding-left: 10px;
 }
+
 .home-section .about {
   position: relative;
   height: 80vh;
   background-image: url(https://plos.org/wp-content/uploads/2020/07/abstract-image_color-tone-1120x630.jpg);
 }
+
 .home-section .about .text {
   width: 100%;
   position: absolute;
@@ -104,22 +142,27 @@ body {
   transform: translate(-50%, -50%);
   color: var(--text-color);
 }
+
 .home-section .about .text h2 {
   font-size: 1.25vw;
   font-weight: 400;
   padding-bottom: 25px;
 }
+
 .home-section .about .text h3 {
   font-size: 3vw;
   line-height: 200%;
 }
+
 .home-section .cta {
   padding: 5% 10%;
   text-align: center;
 }
+
 .home-section .cta .heading {
   color: var(--text-color);
 }
+
 .home-section .cta-box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, auto));
@@ -128,6 +171,7 @@ body {
   margin-top: 5rem;
   text-align: center;
 }
+
 .home-section .wrap {
   background: #ffffff;
   box-shadow: 18px 0px 87px 0px rgb(10 15 70 / 7%);
@@ -136,11 +180,13 @@ body {
   transition: ease 0.4s;
   cursor: pointer;
 }
+
 .home-section .wrap h3 {
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 2px;
 }
+
 .home-section .wrap p {
   font-size: var(--p-font);
 }
