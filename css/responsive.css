@@ -1,143 +1,184 @@
 @media (max-width: 1024px) {
   nav {
-    padding: 10px 8%;
+      padding: 10px 8%;
   }
 
   nav img {
-    width: 60px;
+      width: 60px;
   }
 
   .navlist li {
-    padding: 8px 25px;
+      padding: 8px 25px;
   }
 
   .navlist a {
-    font-size: 0.9rem;
+      font-size: 0.9rem;
   }
 
   .home-section .work .cards {
-    padding: 35px 0;
-    justify-content: space-between;
+      padding: 35px 0;
+      justify-content: space-between;
   }
   .home-section .work .cards .card {
-    width: 50%;
+      width: 50%;
   }
   .home-section .work .cards .card h4 {
-    font-size: 2.2vw;
+      font-size: 2.2vw;
   }
 
   .home-section .work .cards .card p {
-    font-size: 1.8vw;
+      font-size: 1.8vw;
   }
 
   footer .row .col:nth-child(2),
   .col:nth-child(3) {
-    flex-basis: 35%;
+      flex-basis: 35%;
   }
 
   footer .row .col:nth-child(4) {
-    flex-basis: 100%;
+      flex-basis: 100%;
   }
 }
 
 @media (max-width: 768px) {
   #menu-icon {
-    display: block;
+      display: block;
+  }
+  nav img {
+      display: none;
+  }
+  nav {
+      padding: 5% 10%;
   }
 
   .navlist {
-    position: absolute;
-    top: -600px;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    background: var(--bg-color);
-    text-align: right;
-    transition: all 0.4s;
+      position: absolute;
+      top: -600px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      background: var(--bg-color);
+      text-align: right;
+      transition: all 0.4s;
   }
 
   .navlist a {
-    display: block;
-    padding: 1.2rem;
-    margin: 1.5rem;
-    border-right: 2px solid var(--text-color);
-    color: var(--text-color);
+      display: block;
+      padding: 1.2rem;
+      margin: 1.5rem;
+      border-right: 2px solid var(--text-color);
+      color: var(--text-color);
   }
 
   .navlist a:hover {
-    background: black;
-    color: white;
+      background: black;
+      color: white;
   }
 
   .navlist a::after {
-    display: none;
+      display: none;
   }
 
   .navlist.active {
-    top: 100%;
+      top: 100%;
+  }
+  .home-section .work {
+      padding: 10% 10%;
   }
 
   footer {
-    bottom: unset;
+      bottom: unset;
   }
   footer .row {
-    width: 75%;
+      width: 75%;
   }
   footer .row .col {
-    flex-basis: 100%;
+      flex-basis: 100%;
   }
   footer .row .col:nth-child(2),
   .col:nth-child(3) {
-    flex-basis: 50%;
+      flex-basis: 50%;
   }
   .home-section .work .cards {
-    padding: 35px 0;
+      padding: 35px 0;
   }
   .home-section .work .cards .card {
-    width: 45%;
-    padding: 5px 10px;
+      width: 45%;
+      padding: 5px 10px;
   }
 }
 @media (max-width: 425px) {
+  nav img {
+      width: 50px;
+  }
+  #menu-icon {
+      font-size: 20px;
+  }
+  .home-section .home {
+      flex-direction: column;
+  }
+  .home-section .home .text {
+      width: 100%;
+      font-size: 5vw;
+  }
+  .home-section .home img {
+      display: none;
+  }
   .home-section .work {
-    padding: 10% 10%;
+      padding: 10% 10%;
   }
 
   .home-section .work h3 {
-    font-size: 3vw;
-    text-align: center;
-    line-height: 150%;
+      font-size: 5vw;
+      line-height: 150%;
   }
   .home-section .work .cards {
-    padding: 20px 0;
-    align-items: center;
-    flex-direction: column;
+      padding: 20px 0;
+      align-items: center;
+      flex-direction: column;
   }
 
   .home-section .work .cards .card {
-    width: 100%;
-    padding: 10px 0;
+      width: 100%;
+      padding: 10px 0;
   }
 
   .home-section .work .cards .card h4 {
-    font-size: 4vw;
+      font-size: 4vw;
   }
 
   .home-section .work .cards .card p {
-    font-size: 3.5vw;
+      font-size: 3.5vw;
   }
 
   .home-section .work a,
   .home-section .about .text a {
-    font-size: 2.5vw;
+      font-size: 2.8vw;
   }
 
-  .home-section .work a i,
-  .home-section .about a i {
-    padding-left: 10px;
+  .home-section .about .text {
+      width: 100%;
+      position: absolute;
+      padding: 0 10%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--text-color);
   }
+
+  .home-section .about .text h2 {
+      font-size: 1.5vw;
+      font-weight: 400;
+      padding-bottom: 10px;
+  }
+
+  .home-section .about .text h3 {
+      font-size: 3.8vw;
+      line-height: 200%;
+  }
+
   footer .row .col:nth-child(2),
   .col:nth-child(3) {
-    flex-basis: 100%;
+      flex-basis: 100%;
   }
 }
