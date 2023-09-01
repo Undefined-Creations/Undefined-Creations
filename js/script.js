@@ -66,3 +66,10 @@ document.getElementById("contact-form").addEventListener("submit", (event) => {
       // You can add handling for error cases here, like displaying an error message
     });
 });
+
+// preloader 
+var loader = document.getElementById('preloader');
+
+window.addEventListener("load", function(){
+  loader.style.display = "none";
+});
